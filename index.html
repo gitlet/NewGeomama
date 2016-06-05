@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalabe=no">
+    <title>Geomama Tracking Solutions</title>
+    <!-- AngularJS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <!-- JQUERY__BOWER -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- local_jquery.js -->
+    <script src="scripts/local_jquery.js"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/font-awesome-4.6.2/css/font-awesome.css">
+    <link rel="stylesheet" href="styles/master.css">
+  </head>
+  <body ng-app="GeomamaApp">
+
+    <div class="left-menu left-toggling" ng-controller="ListCtrl">
+      <ul>
+        <li ng-repeat="template in templates">{{template}}</li>
+      </ul>
+    </div>
+
+    <div class="main-content untoggle-left untoggle-right">
+      <header>
+        <a href="#" id="left-menu-toggler">
+          <i class="fa fa-list" aria-hidden="true"></i>
+        </a>
+        <a href="index.html">
+          <img ng-src="img/geo-track-solution.png" alt="" />
+        </a>
+        <a href="" id="right-menu-toggler">
+          <i class="fa fa-taxi" aria-hidden="true"></i>
+        </a>
+      </header>
+    </div>
+
+    <div class="right-menu right-toggling">
+      <ul>
+        <li><a href="">ALL</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

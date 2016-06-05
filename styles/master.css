@@ -1,0 +1,73 @@
+/*~~~~~~~~~~~~~~~~~left-menu~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.left-menu {
+  /*border: 1px solid #555;*/
+  position: absolute;
+  top: 0;
+  left: 0px;
+  bottom: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(17, 31, 56, 0.93),rgba(34, 64, 119, 0.94));
+  -webkit-transition: left ease-in-out 0.5s;
+  -moz-transition: left ease-in-out 0.5s;
+  -o-transition: left ease-in-out 0.5s;
+  -ms-transition: left ease-in-out 0.5s;
+  transition: left ease-in-out 0.5s;
+}
+.left-menu ul {list-style-type: none;}
+
+/*~~~~~~~~~~~~~~~~~end of left-menu~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~main content~~~~~~~~~~~~~~~~~~~~~~*/
+.main-content {
+  height: 100vh;
+  width: 100%;
+  /*border: 1px solid #000;*/
+  position: absolute;
+  top: -8px;
+  left: 300px;
+  right: 300px;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: left ease-in-out 0.5s;
+  -moz-transition: left ease-in-out 0.5s;
+  -o-transition: left ease-in-out 0.5s;
+  -ms-transition: left ease-in-out 0.5s;
+  transition: left ease-in-out 0.5s;
+}
+.untoggle-left {left: 0px;}
+.untoggle-right {right: -300px;}
+.left-toggling {left: -360px;}
+.right-toggling {right: 0px;}
+.main-content header {
+  position: absolute;
+  background: linear-gradient(rgba(17, 31, 56, 0.93),rgba(34, 64, 119, 0.94));
+  overflow-x: hidden;text-align: center;padding-top: 28px;
+  top: 0;left: 0;right: 0;
+}
+.main-content header img {height: 48px;}
+.main-content header a {text-decoration: none;color: #fff;}
+.main-content header a i {position: relative;top:10px;font-size: 24px;}
+.main-content header #left-menu-toggler {
+  position: absolute;;left: 10px;
+}
+.main-content header #right-menu-toggler {
+  position: absolute;;right: 10px;
+}
+/*~~~~~~~~~~~~~~~~~~end of main content~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~right-menu~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.right-menu {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  bottom: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(17, 31, 56, 0.93),rgba(34, 64, 119, 0.94));
+  -webkit-transition: left ease-in-out 0.5s;
+  -moz-transition: left ease-in-out 0.5s;
+  -o-transition: left ease-in-out 0.5s;
+  -ms-transition: left ease-in-out 0.5s;
+  transition: left ease-in-out 0.5s;
+}
+.right-menu ul {list-style-type: none;}
+/*~~~~~~~~~~~~~~~~~end of right-menu~~~~~~~~~~~~~~~~~~~~~~~~~*/
